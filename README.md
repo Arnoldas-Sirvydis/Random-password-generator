@@ -1,1 +1,1 @@
-# Random-password-generator made with HTM, CSS, JS.
+# Random-password-generator made with HTML, CSS, JS.
