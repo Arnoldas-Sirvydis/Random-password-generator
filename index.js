@@ -7,9 +7,14 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 let password = ""
 const passwordField = document.getElementById("password-field")
 const generatePassword = document.getElementById("generate-password")
+passwordField.setAttribute("readonly", true)
 
 
 generatePassword.addEventListener("click", () => {
+    if(passwordField.value != "") {
+        passwordField.value === ""
+        password = ""
+    }
     for(i = 0; i < 16; i ++) {
         let randomNum = Math.floor(Math.random() * 91);
         password += characters[randomNum]
