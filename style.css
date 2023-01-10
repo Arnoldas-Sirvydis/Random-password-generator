@@ -29,18 +29,17 @@ input {
     font-size: 20px;
     text-align: center;
     filter: drop-shadow(0 0 20px #10b982);
+    outline: none;
 }
 
 input:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 input:active {
   background: white;
-}
-
-input:focus {
-
 }
 
 
