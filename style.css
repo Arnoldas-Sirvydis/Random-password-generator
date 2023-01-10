@@ -42,6 +42,10 @@ input:active {
   background: white;
 }
 
+input::selection {
+  user-select: none;
+}
+
 
 
 
@@ -84,6 +88,19 @@ button:before {
 button:hover {
   box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
   transform: scale(1.05);
+}
+
+#popup-window {
+  /* position: fixed;
+  bottom: 150px; */
+  /* right: 20px; */
+  background: #263548;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  visibility: hidden;
+  margin-top: 10px;
+  font-size: 20px;
 }
 
 #green {

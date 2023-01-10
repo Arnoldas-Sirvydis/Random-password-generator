@@ -23,9 +23,21 @@ generatePassword.addEventListener("click", () => {
 })
 
 
+
 passwordField.addEventListener("click", () => {
-    passwordField.select()
-    document.execCommand("copy")
-})
-  
+    if (navigator.clipboard) {
+        /* clipboard API is supported */
+        navigator.clipboard.writeText(passwordField.value)
+    } else {
+        /* clipboard API not supported */
+        passwordField.select();
+        document.execCommand("copy");
+    }
+    document.getElementById("popup-window").style.visibility = "visible";
+    setTimeout(() => {
+      document.getElementById("popup-window").style.visibility = "hidden";
+    }, 3000); // after 3s the popup window will get hidden
+});
+
+
 
