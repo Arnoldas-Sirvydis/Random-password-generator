@@ -1,2 +1,1 @@
-# Random-password-generator-website
-Random password generator website
+# Random password generator made with HTML, CSS, JS.
