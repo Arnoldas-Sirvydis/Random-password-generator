@@ -1,32 +1,20 @@
 body {
-    margin: 0;
     color: white;
-    background: #202938;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
 #main-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background: #202938;
     height: 80vh;
     width: 80vw;
 }
 
 input {
     margin: 40px 0;
-    background: #263548;
-    border-radius: 5px;
     border: 2px solid #10b982;
     height: 40px;
     width: 250px;
     color: #10b982;
-    font-size: 20px;
     text-align: center;
     filter: drop-shadow(0 0 20px #10b982);
     outline: none;
@@ -91,13 +79,10 @@ button:hover {
 }
 
 #popup-window {
-  background: #263548;
   color: white;
   padding: 20px;
-  border-radius: 5px;
   visibility: hidden;
   margin-top: 10px;
-  font-size: 20px;
 }
 
 #green {
@@ -117,10 +102,29 @@ button:hover {
 
 h1 {
   font-size: 50px;
-  margin: 0;
 }
 
 h3 {
   font-size: 25px;
+}
+
+body,
+h1,
+h3 {
   margin: 0;
+}
+
+body,
+#main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #202938;
+}
+
+#popup-window,
+input {
+  background: #263548;
+  border-radius: 5px;
+  font-size: 20px;
 }
