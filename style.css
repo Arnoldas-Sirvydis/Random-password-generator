@@ -2,8 +2,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
     color: white;
+    height: 100vh;
 }
 
 body,
@@ -15,7 +20,6 @@ h3 {
 
 .main-container {
     flex-direction: column;
-    height: 100vh;
 }
 
 body,
@@ -27,13 +31,13 @@ body,
 }
 
 input {
-    margin: 40px 0;
-    border: 2px solid #10b982;
-    height: 40px;
-    width: 250px;
+    margin: 4rem 0;
+    border: 0.2rem solid #10b982;
+    height: 4rem;
+    width: 25rem;
     color: #10b982;
     text-align: center;
-    filter: drop-shadow(0 0 20px #10b982);
+    filter: drop-shadow(0 0 2rem #10b982);
     outline: none;
 }
 
@@ -57,17 +61,17 @@ input::selection {
 button {
   background-color: #0078d0;
   border: 0;
-  border-radius: 25px;
+  border-radius: 2.5rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   outline: 0;
-  padding: 16px 21px;
+  padding: 1.6rem 2.1rem;
   position: relative;
-  margin: 30px 0;
+  margin: 3rem 0;
   text-align: center;
   text-decoration: none;
   transition: all .3s;
@@ -79,7 +83,7 @@ button {
 button:before {
   background-color: initial;
   background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-  border-radius: 20px;
+  border-radius: 2rem;
   content: "";
   height: 56%;
   left: 4%;
@@ -91,15 +95,18 @@ button:before {
 }
 
 button:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  box-shadow:
+   rgba(255, 255, 255, .2) 0 0.3rem 1.5rem inset,
+   rgba(0, 0, 0, .1) 0 0.3rem 0.5rem, 
+   rgba(0, 0, 0, .1) 0 1rem 1.3rem;
   transform: scale(1.05);
 }
 
 .popup-window {
   color: white;
-  padding: 20px;
+  padding: 2rem;
   visibility: hidden;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .green {
@@ -117,18 +124,18 @@ button:hover {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .popup-window,
 input {
   background: #263548;
-  border-radius: 5px;
-  font-size: 20px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 690px) {
@@ -142,16 +149,16 @@ input {
 
 @media (max-width: 500px) {
   .main-container {
-    padding-top: 50px;
+    padding-top: 5rem;
     text-align: center;
     justify-content: flex-start;
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 input {
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 }
